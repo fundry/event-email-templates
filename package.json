@@ -1,0 +1,12 @@
+{
+  "name": "rcf",
+  "version": "1.0.0",
+  "description": "Container Repository for all remotify-cloud-functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Nwani Victory",
+  "license": "ISC"
+}

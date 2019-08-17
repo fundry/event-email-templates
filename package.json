@@ -8,5 +8,10 @@
   },
   "keywords": [],
   "author": "Nwani Victory",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/functions-framework": "^1.2.1",
+    "@google/cloud-debug": "^0.9.3",
+    "mailgun-js": "^0.22.0"
+  }
 }

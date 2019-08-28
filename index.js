@@ -1,8 +1,8 @@
+require('dotenv').config();
 //recieve and send welcome email to users
-require('@google/cloud-debug');
 
-var api_key = 'XXXXXXXXXXXXXXXXXXXXXXX';
-var domain = 'www.mydomain.com';
+var api_key =' process.env.MAILGUN_API';
+var domain =  'process.env.MAILGUN_SANDBOX';
 var mailgun = require('mailgun-js')({ apiKey: api_key, domain: domain });
 
 exports.emailVerification = function(req, _res) {
@@ -25,3 +25,7 @@ exports.emailVerification = function(req, _res) {
     }
   });
 };
+
+// exports.emailVerification = (req, res) => {
+//   res.send('Hello, World');
+// };

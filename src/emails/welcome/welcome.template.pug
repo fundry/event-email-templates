@@ -8,21 +8,26 @@ html.no-js(lang='en')
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/css/foundation-float.css')
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/css/foundation-float.css.map')
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/css/foundation-float.min.css')
+    link(rel='stylesheet', href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css", integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T", crossorigin="anonymous")
+  
   body
     .row
         img.half-width(src="https://res.cloudinary.com/dkfptto8m/image/upload/v1561061164/Fundry/worker.jpg")
+    
+        br
+
         h2(style="text-align : center") Verify your Event Workspace 
     .row
       .large-12.columns
-        .callout
-          p
-            | We're stoked you want to use the Remotify service. However , before you proceed we need to verify the email address attached to this account.
+        p We're stoked you want to use the Remotify service. 
+        p However , before you proceed we need to verify the email address attached to this account.
+        
 
-          p Please click the button  below to verify your account 
-          a.button(href='#')(style="text-align : center") Verify Email
+        p Please click the button  below to verify your account 
+        a.button(href='#')(style="text-align : center") Verify Email
 
-        p(style="text-align : center") Please ignore this mail or Contact Support if this account was not created by you. 
-          a(href="https://remotify.netlify.com")(style="text-align : center") contact support 
+      p(style="text-align : center") Please ignore this mail or Contact Support if this account was not created by you. 
+      a(style="text-align : center")(href="https://remotify.netlify.com") contact support 
         
 
     script(src='bower_components/jquery/dist/jquery.js')

@@ -5,11 +5,15 @@ body {
 
 #image { 
 	text-align: center;
-	max-height: 30px;
+	max-width: 5em;
  }
 
 h3 {
 	text-align: center;
+}
+
+#paragraph {
+	padding-left: 15px;
 }
 
 #button { 
@@ -17,9 +21,10 @@ h3 {
 	padding : 0.5em;
 	color : #000;
 	margin: 0.5em;
-	width: 20em;
+	width: 10em;
 	border-radius: 5px;
 	background: transparent;
+	text-align: center;
 	:hover { 
 		cursor: pointer;
 		background-color: #3D1044;

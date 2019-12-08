@@ -10,10 +10,9 @@ exports.emailVerification = function(req, _res) {
   let sender = process.env.SENDER;
   let reciever = req.query.email;
   let account_type = req.query.account_type;
+  let token = req.query.token
 
-  console.log(username);
-  console.log(password);
-  console.log(reciever, account_type); // test with postman
+  console.log(username , password , reciever , account_type , token);
 
   var transport = nodemailer.createTransport({
     host: process.env.HOST,

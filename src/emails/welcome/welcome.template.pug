@@ -6,26 +6,26 @@ html.no-js(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title Verify your account
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/css/foundation-float.css')
-    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/css/foundation-float.css.map')
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/css/foundation-float.min.css')
     link(rel='stylesheet', href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css", integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T", crossorigin="anonymous")
   
+
+    link(rel="stylesheet" href="style.css" )
   body
-    .row
-        img.half-width(src="https://res.cloudinary.com/dkfptto8m/image/upload/v1561061164/Fundry/worker.jpg")
+    .div(id="image")
+      img.half-width(src="https://res.cloudinary.com/dkfptto8m/image/upload/v1575842787/remotify-logo_1.png")
     
-        br
-
-        h2(style="text-align : center") Verify your Event Workspace 
     .row
-      .large-12.columns
-        p We're stoked you want to use the Remotify service. 
-        p However , before you proceed we need to verify the email address attached to this account.
-        
+      .div
+        h3 Remotify Event Workspace
 
-        p Please click the button  below to verify your account 
-        a.button(href='#')(style="text-align : center") Verify Email
+        p(style={paddingLeft : '10px'}) We're stoked you want to use the Remotify service. 
+        p However , we need to verify the email address attached to this account before you proceed.
 
+        .div(id="button")
+          a(href='#')(style="text-align : center") Verify Email
+
+    .div(id="warning")        
       p(style="text-align : center") Please ignore this mail or Contact Support if this account was not created by you. 
       a(style="text-align : center")(href="https://remotify.netlify.com") contact support 
         

@@ -5,5 +5,7 @@
 
 <p>  A sample test for this functions using CURL is  <code>http://localhost:8080/?email=EMAIL&account_type=ORGANIZATION_TYPE</code>   </p>
 
+<h4> This project uses `Gulp 3` hence it has to be run with `node 11` . `NVM` is recommened for managing multiple node versions locally.  </h4>
+
 
 

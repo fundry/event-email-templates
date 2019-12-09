@@ -6,10 +6,9 @@ body {
 
 #image { 
 	text-align: center;
-	max-width: 15em;
+	max-width: 13em;
 	display: inline-block;
  }
-
 
 /* media query for small devices */
 @media all and (max-width : 480px){
@@ -17,7 +16,7 @@ body {
 		max-width: 10em;
 	}
 
-	h3 {
+	h4 {
 		font-weight: normal;
 		font-size: 1.7em;
 	}
@@ -27,7 +26,7 @@ body {
 	}
 }
 
-h3 {
+h4 {
 	text-align: center;
 }
 

@@ -6,11 +6,12 @@ const nodemailer = require('nodemailer');
 const username = process.env.SMTP_USERNAME;
 const password = process.env.SMTP_PASSWORD;
 
-exports.emailVerification = function(req, _res) {
+exports.Emailer = function(req, _res) {
   let sender = process.env.SENDER;
   let reciever = req.query.email;
   let account_type = req.query.account_type;
   let token = req.query.token
+  let account_name = req.account_name
 
   console.log(username , password , reciever , account_type , token);
 
@@ -29,8 +30,8 @@ exports.emailVerification = function(req, _res) {
       from: sender,
       to: reciever,
       subject: ' Verify Email Address',
-      text: 'Verify your registered mail for you workspace',
-      html: { path: 'dist/welcome.template.html' },
+      text: `Verify your registered mail for your ${account_name} ${account_type}`,
+      html: { path: 'dist/organizations.template.html' },
     },
     (error, info) => {
       if (error) {

@@ -8,27 +8,39 @@ html.no-js(lang='en')
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/css/foundation-float.css')
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/css/foundation-float.min.css')
     link(rel='stylesheet', href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css", integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T", crossorigin="anonymous")
-  
 
     link(rel="stylesheet" href="style.css" )
   body
-    .div(id="image")
-      img.half-width(src="https://res.cloudinary.com/dkfptto8m/image/upload/v1575842787/remotify-logo_1.png")
+    .div(id="container")
+      .div(id="image")
+        img.half-width(src="https://res.cloudinary.com/dkfptto8m/image/upload/v1575842787/remotify-logo_1.png")
     
+    br 
     .row
       .div
-        h3 Remotify Event Workspace
+        h3 Fundry Event Workspace
 
-        p(id="paragraph") We're stoked you want to use the Remotify service. 
-        p However , we need to verify the email address attached to this account before you proceed.
+        .p(id="paragraph") We're stoked and excited that you want to use the Remotify service. 
+        .p However , we need to verify the email address attached to your account before we proceed to provision your workspace.
 
-        .div(id="button")
-          a(href='#')(style="text-align : center") Verify Email
+        .div(id="container")
+          .div(id="button")
+            a(href='#') Verify Email
+
+    .div(id="")        
+      .p(style="text-align : center") This mail would become invalid in the next 24 hours. 
 
     .div(id="warning")        
-      p(style="text-align : center") Please ignore this mail or Contact Support if this account was not created by you. 
-      a(style="text-align : center")(href="https://remotify.netlify.com") contact support 
-        
+      .p(style="text-align : center") Please ignore this mail or Contact Support if this account was not created by you. 
+
+      br
+    .div()
+      .p(id="link") Find us on - 
+        .div(id="links")
+          a(href="#") Twitter
+          a(href="#") Facebook
+          a(href="#") Linkedin
+          a(href="#") Youtube
 
     script(src='bower_components/jquery/dist/jquery.js')
     script(src='bower_components/what-input/what-input.js')

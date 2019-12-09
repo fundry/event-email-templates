@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@google-cloud/functions-framework@^1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@google-cloud/functions-framework/-/functions-framework-1.2.1.tgz#d35b11101c31676d96ce7ced65af198503035a7c"
-  integrity sha512-4gDZqRGKNUQkWomQyaEe1XUja1xviUmr87P/DuJkzba5XSwdAjkKDXRgeH+0kpCkgsH6W/ri7GMYZzywnkayHw==
+"@google-cloud/functions-framework@^1.3.2":
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/@google-cloud/functions-framework/-/functions-framework-1.3.2.tgz#948ceb9be9d372d20dcf1a95960553f57dcfe47e"
+  integrity sha512-xRBokqMNLTK70dWoRJ0AYPGkm9W6IKoZgUArcRhR0idPJa9US8qolhHM7CDMs2sROiMNSSNdmsc+tnsPjzFcEA==
   dependencies:
     body-parser "^1.18.3"
     express "^4.16.4"

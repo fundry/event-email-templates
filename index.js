@@ -13,7 +13,7 @@ exports.Emailer = function(req, _res) {
   let token = req.query.token
   let account_name = req.account_name
 
-  console.table([username , password , reciever , account_type , token]);
+  console.table([username , password , reciever , account_type , account_name]);
 
   var transport = nodemailer.createTransport({
     host: process.env.HOST,
@@ -24,6 +24,14 @@ exports.Emailer = function(req, _res) {
       pass: password,
     },
   });
+
+  transport.verify(function(error , success){
+    if(error){
+      console.log(error)
+    } else {
+      console.log('connection success')
+    }
+  })
 
   transport.sendMail(
     {

@@ -1,0 +1,48 @@
+doctype html
+html.no-js(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Verify your account
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/css/foundation-float.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/css/foundation-float.min.css')
+    link(rel='stylesheet', href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css", integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T", crossorigin="anonymous")
+
+    link(rel="stylesheet" href="style.css" )
+  body
+    .div(id="container")
+      .div(id="image")
+        img.half-width(src="https://res.cloudinary.com/dkfptto8m/image/upload/v1575842787/remotify-logo_1.png")
+    
+    br 
+    .row
+      .div
+        h3 Fundry Workspace
+
+        .p(id="paragraph") You have been invited to join the Fundry Workspace 
+        .p However , we need to verify the email address attached to your account before we proceed to provision your workspace.
+
+        .div(id="container")
+          .div(id="button")
+            a(href='#') Accept your invite
+
+    .div(id="")        
+      .p(style="text-align : center") This mail would become invalid in the next 24 hours. 
+
+    .div(id="warning")        
+      .p(style="text-align : center") Please ignore this mail or Contact Support if this account was not created by you. 
+
+      br
+    .div()
+      .p(id="link") Find us on - 
+        .div(id="links")
+          a(href="#") Twitter
+          a(href="#") Facebook
+          a(href="#") Linkedin
+          a(href="#") Youtube
+
+    script(src='bower_components/jquery/dist/jquery.js')
+    script(src='bower_components/what-input/what-input.js')
+    script(src='bower_components/foundation-sites/dist/foundation.js')
+    script(src='js/app.js')

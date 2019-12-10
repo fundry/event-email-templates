@@ -6,7 +6,7 @@ const nodemailer = require('nodemailer');
 const username = process.env.SMTP_USERNAME;
 const password = process.env.SMTP_PASSWORD;
 
-exports.Emailer = function(req, _res) {
+exports.Emailer = function(req, res) {
   let sender = process.env.SENDER;
   let reciever = req.query.email;
   let account_type = req.query.account_type;
@@ -27,19 +27,39 @@ exports.Emailer = function(req, _res) {
 
   transport.verify(function(error , success){
     if(error){
-      console.log(error)
+      console.log(error , 'error')
     } else {
       console.log('connection success')
     }
   })
 
-  transport.sendMail(
+switch(res, account_type, transport){
+  case account_type == 'Organization' : 
+       transport.sendMail(
+        {
+          from: sender,
+          to: reciever,
+          subject: ' Verify Email Address',
+          html: { path: 'dist/organizations.template.html' },
+        },
+        (error, info) => {
+          if (error) {
+            console.log(error);
+          } else {
+            console.log('message sent');
+          }
+          transport.close();
+        }
+  )
+  break; 
+
+  case account_type == 'Member' : 
+    transport.sendMail(
     {
       from: sender,
       to: reciever,
-      subject: ' Verify Email Address',
-      text: `Verify your registered mail for your ${account_name} ${account_type}`,
-      html: { path: 'dist/organizations.template.html' },
+      subject: 'Accept Organization Invite',
+      html: { path: 'dist/members-invite.template.html' },
     },
     (error, info) => {
       if (error) {
@@ -49,5 +69,11 @@ exports.Emailer = function(req, _res) {
       }
       transport.close();
     }
-  );
+  )
+
+  break;
+  default: 
+  res.status(405).send({error: `Email recipient type hasnt been matched in ${account_type}`})
 };
+
+}

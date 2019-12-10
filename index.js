@@ -39,7 +39,7 @@ exports.Emailer = function(req, res) {
       res.status(401).send({error: `Empty email address`})
   }else { 
 switch(res, type, transport  , name){
-  case type === "Organization" : 
+  case "Organization" : 
        transport.sendMail(
         {
           from: sender,
@@ -58,7 +58,7 @@ switch(res, type, transport  , name){
   )
   break; 
 
-  case type === "Member" : 
+  case "Member" : 
     transport.sendMail(
     {
       from: sender,
@@ -77,6 +77,9 @@ switch(res, type, transport  , name){
   )
 
   break;
+
+    default : 
+      res.status(405).send({error: 'Recipient type doesnt match available types'})
   };
   }
 

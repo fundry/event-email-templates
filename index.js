@@ -9,11 +9,13 @@ const password = process.env.SMTP_PASSWORD;
 exports.Emailer = function(req, res) {
   let sender = process.env.SENDER;
   let reciever = req.query.email;
-  let account_type = req.query.account_type;
-  let token = req.query.token
-  let account_name = req.account_name
+  let type = req.query.type;
+  let token = req.query.token;
+  let name = req.query.name;
 
-  console.table([username , password , reciever , account_type , account_name]);
+
+  console.log(req)
+  console.table([username , password , reciever , type , name]);
 
   var transport = nodemailer.createTransport({
     host: process.env.HOST,
@@ -33,8 +35,8 @@ exports.Emailer = function(req, res) {
           }
   })
 
-switch(res, account_type, transport){
-  case account_type == 'Organization' : 
+switch(res, type, transport  , name){
+  case type == 'Organization' : 
        transport.sendMail(
         {
           from: sender,
@@ -53,7 +55,7 @@ switch(res, account_type, transport){
   )
   break; 
 
-  case account_type == 'Member' : 
+  case type == 'Member' : 
     transport.sendMail(
     {
       from: sender,
@@ -73,7 +75,6 @@ switch(res, account_type, transport){
 
   break;
   default: 
-  res.status(405).send({error: `Email recipient type hasnt been matched in ${account_type}`})
+  res.status(405).send({error: `Email recipient type hasnt been matched in ${type}`})
 };
-
 }

@@ -13,8 +13,6 @@ exports.Emailer = function(req, res) {
   let token = req.query.token;
   let name = req.query.name;
 
-
-  console.log(req)
   console.table([username , password , reciever , type , name]);
 
   var transport = nodemailer.createTransport({
@@ -35,6 +33,11 @@ exports.Emailer = function(req, res) {
           }
   })
 
+
+  console.log(req.query.email)
+  if ( reciever == null ) {
+      res.status(401).send({error: `Empty email address`})
+  }else { 
 switch(res, type, transport  , name){
   case type === "Organization" : 
        transport.sendMail(
@@ -74,7 +77,7 @@ switch(res, type, transport  , name){
   )
 
   break;
-  default: 
-  res.status(405).send({error: `Email recipient type hasnt been matched in ${type}`})
-};
+  };
+  }
+
 }

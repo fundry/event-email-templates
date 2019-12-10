@@ -36,7 +36,7 @@ exports.Emailer = function(req, res) {
   })
 
 switch(res, type, transport  , name){
-  case type == 'Organization' : 
+  case type === "Organization" : 
        transport.sendMail(
         {
           from: sender,
@@ -55,7 +55,7 @@ switch(res, type, transport  , name){
   )
   break; 
 
-  case type == 'Member' : 
+  case type === "Member" : 
     transport.sendMail(
     {
       from: sender,

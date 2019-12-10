@@ -34,12 +34,11 @@ exports.Emailer = function(req, res) {
   })
 
 
-  console.log(req.query.email)
   if ( reciever == null ) {
       res.status(401).send({error: `Empty email address`})
   }else { 
-switch(res, type, transport  , name){
-  case "Organization" : 
+switch(type){
+  case 'Organization' : 
        transport.sendMail(
         {
           from: sender,
@@ -58,7 +57,7 @@ switch(res, type, transport  , name){
   )
   break; 
 
-  case "Member" : 
+  case 'Member' : 
     transport.sendMail(
     {
       from: sender,

@@ -27,10 +27,10 @@ exports.Emailer = function(req, res) {
 
   transport.verify(function(error , success){
     if(error){
-      console.log(error , 'error')
+      res.status(401).send({error: `failed to connect with stmp. check credentials`})
     } else {
-      console.log('connection success')
-    }
+      res.status(200).send()
+          }
   })
 
 switch(res, account_type, transport){

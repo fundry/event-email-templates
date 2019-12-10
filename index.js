@@ -44,7 +44,7 @@ switch(res, type, transport  , name){
         {
           from: sender,
           to: reciever,
-          subject: ' Verify Email Address',
+          subject: ' Verify Attached Email Address - ',
           html: { path: 'dist/organizations.template.html' },
         },
         (error, info) => {
@@ -63,7 +63,7 @@ switch(res, type, transport  , name){
     {
       from: sender,
       to: reciever,
-      subject: 'Accept Organization Invite',
+      subject: 'Accept Invite -',
       html: { path: 'dist/members-invite.template.html' },
     },
     (error, info) => {

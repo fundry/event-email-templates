@@ -1,7 +1,7 @@
 {
-  "name": "rcf",
+  "name": "oasis-event-templates",
   "version": "1.0.0",
-  "description": "Container Repository for all remotify-cloud-functions",
+  "description": "container repository for oasis event emailing templates",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

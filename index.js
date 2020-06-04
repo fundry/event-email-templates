@@ -14,7 +14,7 @@ exports.Emailer = function(req, res) {
   let EventName = req.query.EventName;
   let InviteType = req.query.InviteType;
 
-  // console.table([username , password , reciever , type , name]);
+  console.table([username , password , reciever , type , name]);
   var transport = nodemailer.createTransport({
     host: process.env.HOST,
     port: 587,

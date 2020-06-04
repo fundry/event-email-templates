@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@google-cloud/functions-framework@^1.3.2":
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/@google-cloud/functions-framework/-/functions-framework-1.3.2.tgz#948ceb9be9d372d20dcf1a95960553f57dcfe47e"
-  integrity sha512-xRBokqMNLTK70dWoRJ0AYPGkm9W6IKoZgUArcRhR0idPJa9US8qolhHM7CDMs2sROiMNSSNdmsc+tnsPjzFcEA==
+"@google-cloud/functions-framework@^1.5.1":
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/@google-cloud/functions-framework/-/functions-framework-1.5.1.tgz#d8b0fd4a0481dcb564a5ab35fac08b6a69b518b1"
+  integrity sha512-QvEB0WxP9P+/ykXVM2l41MhPvq0mDKIMoINHPi1Rm4CDuhFEShgOimNXKf/g0ROEyCKVFWO7IfWr4lrVH5CP0Q==
   dependencies:
     body-parser "^1.18.3"
     express "^4.16.4"
@@ -1834,11 +1834,6 @@ forwarded@~0.1.2:
   resolved "https://registry.yarnpkg.com/forwarded/-/forwarded-0.1.2.tgz#98c23dab1175657b8c0573e8ceccd91b0ff18c84"
   integrity sha1-mMI9qxF1ZXuMBXPozszZGw/xjIQ=
 
-foundation-emails@^2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/foundation-emails/-/foundation-emails-2.2.1.tgz#1f3442762395d063d5a62d790740b2433aab1747"
-  integrity sha1-HzRCdiOV0GPVpi15B0CyQzqrF0c=
-
 fragment-cache@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/fragment-cache/-/fragment-cache-0.2.1.tgz#4290fad27f13e89be7f33799c6bc5a0abfff0d19"
@@ -2642,10 +2637,10 @@ ip@^1.1.5:
   resolved "https://registry.yarnpkg.com/ip/-/ip-1.1.5.tgz#bdded70114290828c0a039e72ef25f5aaec4354a"
   integrity sha1-vd7XARQpCCjAoDnnLvJfWq7ENUo=
 
-ipaddr.js@1.9.0:
-  version "1.9.0"
-  resolved "https://registry.yarnpkg.com/ipaddr.js/-/ipaddr.js-1.9.0.tgz#37df74e430a0e47550fe54a2defe30d8acd95f65"
-  integrity sha512-M4Sjn6N/+O6/IXSJseKqHoFc+5FdGJ22sXqnjTpdZweHK64MzEPAyQZyEU3R/KRv2GLoa7nNtg/C2Ev6m7z+eA==
+ipaddr.js@1.9.1:
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/ipaddr.js/-/ipaddr.js-1.9.1.tgz#bff38543eeb8984825079ff3a2a8e6cbd46781b3"
+  integrity sha512-0KI/607xoxSToH7GjN1FfSbLoU0+btTicjsQSWQlh/hZykN8KpmMf7uYwPW3R+akZ6R/w18ZlXSHBYXiYUPO3g==
 
 is-absolute@^1.0.0:
   version "1.0.0"
@@ -4283,12 +4278,12 @@ promisify-call@^2.0.2:
     with-callback "^1.0.2"
 
 proxy-addr@~2.0.5:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/proxy-addr/-/proxy-addr-2.0.5.tgz#34cbd64a2d81f4b1fd21e76f9f06c8a45299ee34"
-  integrity sha512-t/7RxHXPH6cJtP0pRG6smSr9QJidhB+3kXu0KgXnbGYMgzEnUxRQ4/LDdfOwZEMyIh3/xHb8PX3t+lfL9z+YVQ==
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/proxy-addr/-/proxy-addr-2.0.6.tgz#fdc2336505447d3f2f2c638ed272caf614bbb2bf"
+  integrity sha512-dh/frvCBVmSsDYzw6n926jv974gddhkFPfiN8hPOi30Wax25QZyZEGveluCgliBnqmuM+UJmBErbAUFIoDbjOw==
   dependencies:
     forwarded "~0.1.2"
-    ipaddr.js "1.9.0"
+    ipaddr.js "1.9.1"
 
 proxy-agent@3:
   version "3.1.1"

@@ -15,10 +15,9 @@
   "author": "Nwani Victory",
   "license": "ISC",
   "dependencies": {
-    "@google-cloud/functions-framework": "^1.3.2",
+    "@google-cloud/functions-framework": "^1.5.1",
     "@google/cloud-debug": "^0.9.3",
     "dotenv": "^8.1.0",
-    "foundation-emails": "^2.2.1",
     "mailgun-js": "^0.22.0",
     "nodemailer": "^6.3.1",
     "nodemailer-mailgun-transport": "^1.4.0",

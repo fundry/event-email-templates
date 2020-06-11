@@ -83,7 +83,7 @@ exports.Emailer = function(req, res) {
             from: sender,
             to: reciever,
             subject: `Confirm ${InviteType} Invitation`,
-            html: { path: "dist/ivite.html" }
+            html: { path: "dist/invite.html" }
           },
           (error, info) => {
             if (error) {

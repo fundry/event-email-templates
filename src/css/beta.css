@@ -1,0 +1,49 @@
+body {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    font-family: calibri;
+    color: #5a6270;
+}
+
+p {
+    font-size : 1.3rem
+}
+
+li {
+    margin : 0.5rem 1rem;
+    font-size : 1.3rem
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    outline: skyblue;
+    padding: 1rem 1rem;
+    background: purple;
+    color: #fff;
+    border: 1px solid purple;
+    border-radius: 7px;
+    font-size: 1.1rem;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+div {
+    margin: 3rem 0rem;
+    width : 45rem;
+    border: 1.5px solid #C0C0C0;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #000;
+}

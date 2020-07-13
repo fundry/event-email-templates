@@ -97,7 +97,7 @@ exports.Emailer = function(req, res) {
         );
         break;
 
-      case 'Beta-tester':
+      case 'beta-tester':
         transport.sendMail(
           {
             from: sender,
@@ -117,7 +117,7 @@ exports.Emailer = function(req, res) {
         break;
 
       default:
-        res.status(405).send({
+        res.status(422).send({
           error: 'An available email template type has not been matched.',
         });
     }

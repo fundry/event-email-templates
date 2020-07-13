@@ -9,10 +9,11 @@ const password = process.env.SMTP_PASSWORD;
 exports.Emailer = function(req, res) {
   // Golang invoker puts these details in a body not Query
   let sender = process.env.SENDER;
-  let reciever = req.body.email;
-  let type = req.body.type;
-  let token = req.body.token;
-  let EventName = req.body.name;
+  let reciever = req.query.email;
+
+  let type = req.query.type;
+  let token = req.query.token;
+  let EventName = req.query.name;
   //let InviteType = req.body.type;
 
   console.table([sender, type, EventName, reciever]);
@@ -52,6 +53,7 @@ exports.Emailer = function(req, res) {
             if (error) {
               console.log(error);
             } else {
+
               console.log('message sent');
             }
             transport.close();
